@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="FloatyWorks LLC" />
+  <meta name="keywords"
+    content="floaty, monkeys, gorilla tag, speedy monkeys, floaty monkys, floatyworks, floatyworks.com, floatyworks.net, floatyworks.org, floatymonkys.org, floatymonkys.com, floatymonkys.net, floatymonkys.org, float" />
+  <meta name="author" content="nevoo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:locale" content="en-US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FloatyWorks LLC" />
+  <meta property="og:description" content="Floaty Monkys - Main Page" />
+  <link rel="icon" type="image/x-icon" href="https://floatys-assets.pages.dev/download.ico">
+  <title>Floaty Monkys - Main Page</title>
+  <!-- Add CSS file for styling -->
+  <link rel="stylesheet" href="https://floatys-assets.pages.dev/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Floaty Monkys!</h1>
+  </header>
+  <nav>
+    <!-- Navigation bar -->
+    <a href="index.html" target="_blank">Home</a> |
+    <a href="privacy-policy/" target="_blank">Privacy Policy</a> |
+    <a href="data-request/" target="_blank">Request Data</a> |
+    <a href="https://floatyworks.replit.app/" target="_blank">Games</a>
+  </nav>
+  <main>
+    <h2>Good Morning!</h2>
+    <p>This is the official Floaty Monkys website. Navigate through the site using the menu above.</p>
+    <button id="toggleButton" onclick="toggleIframe()">Show/Hide Weather</button>
+    <iframe id="weatherIframe" src="https://weather-nnev.replit.app/" width="800" height="600" frameborder="0"
+      style="display: none; border-radius: 15px;"></iframe>
+  </main>
+  <script>
+    function toggleIframe() {
+      var iframe = document.getElementById('weatherIframe');
+      if (iframe.style.display === 'none' || iframe.style.display === '') {
+        iframe.style.display = 'block';
+      } else {
+        iframe.style.display = 'none';
+      }
+    }
+  </script>
+  <footer>
+    <p>&copy; 2024 FloatyWorks LLC</p>
+  </footer>
+</body>
+
+</html>
