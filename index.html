@@ -32,20 +32,7 @@
   <main>
     <h2>Good Morning!</h2>
     <p>This is the official Floaty Monkys website. Navigate through the site using the menu above.</p>
-    <button id="toggleButton" onclick="toggleIframe()">Show/Hide Weather</button>
-    <iframe id="weatherIframe" src="https://weather-nnev.replit.app/" width="800" height="600" frameborder="0"
-      style="display: none; border-radius: 15px;"></iframe>
   </main>
-  <script>
-    function toggleIframe() {
-      var iframe = document.getElementById('weatherIframe');
-      if (iframe.style.display === 'none' || iframe.style.display === '') {
-        iframe.style.display = 'block';
-      } else {
-        iframe.style.display = 'none';
-      }
-    }
-  </script>
   <footer>
     <p>&copy; 2024 FloatyWorks LLC</p>
   </footer>
